@@ -61,7 +61,6 @@ class SignUpViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        layoutBackgroundImageView(imageName: "splash_screen")
         layoutCenterStackView()
         layoutUserIdTextFieldView()
         layoutPasswordTextFieldView()
