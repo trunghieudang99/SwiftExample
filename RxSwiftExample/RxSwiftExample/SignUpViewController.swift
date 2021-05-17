@@ -37,7 +37,6 @@ class SignUpViewController: BaseViewController {
             placeholder: TextManager.driverIdPlaceHolder,
             type: .email
         )
-        view.textField
         return view
     }()
     
