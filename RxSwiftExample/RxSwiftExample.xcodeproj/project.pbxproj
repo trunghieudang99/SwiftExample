@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		333EB265C13B5A9C1844536C /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */; };
-		F60F7FFE2652C599000D2610 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F7FFD2652C599000D2610 /* HomeViewController.swift */; };
 		F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FEFA2652289E00CD76B0 /* AppDelegate.swift */; };
-		F690FEFF2652289E00CD76B0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FEFE2652289E00CD76B0 /* LoginViewController.swift */; };
 		F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F690FF032652289F00CD76B0 /* Assets.xcassets */; };
 		F690FF072652289F00CD76B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F690FF052652289F00CD76B0 /* LaunchScreen.storyboard */; };
 		F690FF27265252B300CD76B0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF26265252B300CD76B0 /* BaseView.swift */; };
@@ -28,10 +26,8 @@
 		2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E551F6479B7363E1F723CC /* Pods-RxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		46D70066A2BCF37138BE77EB /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
-		F60F7FFD2652C599000D2610 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F690FEF72652289E00CD76B0 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F690FEFA2652289E00CD76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F690FEFE2652289E00CD76B0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F690FF032652289F00CD76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F690FF062652289F00CD76B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F690FF082652289F00CD76B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +71,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F668864A265360C100ACBFB5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F690FEFA2652289E00CD76B0 /* AppDelegate.swift */,
+				F690FF032652289F00CD76B0 /* Assets.xcassets */,
+				F690FF052652289F00CD76B0 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F668864D2653614600ACBFB5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F668864E2653614D00ACBFB5 /* login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F668864E2653614D00ACBFB5 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				F690FF5926526D1300CD76B0 /* SignUpViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 		F690FEEE2652289E00CD76B0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,13 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				F690FF192652521B00CD76B0 /* Modules */,
-				F690FEFA2652289E00CD76B0 /* AppDelegate.swift */,
-				F690FEFE2652289E00CD76B0 /* LoginViewController.swift */,
-				F690FF032652289F00CD76B0 /* Assets.xcassets */,
-				F690FF052652289F00CD76B0 /* LaunchScreen.storyboard */,
+				F668864D2653614600ACBFB5 /* Features */,
 				F690FF082652289F00CD76B0 /* Info.plist */,
-				F690FF5926526D1300CD76B0 /* SignUpViewController.swift */,
-				F60F7FFD2652C599000D2610 /* HomeViewController.swift */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -111,6 +128,7 @@
 		F690FF192652521B00CD76B0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F668864A265360C100ACBFB5 /* Resource */,
 				F690FF1A2652522700CD76B0 /* Core */,
 			);
 			path = Modules;
@@ -353,13 +371,11 @@
 				F690FF27265252B300CD76B0 /* BaseView.swift in Sources */,
 				F690FF3B2652617200CD76B0 /* UIView+Extension.swift in Sources */,
 				F690FF2B2652536900CD76B0 /* BaseTextFieldView.swift in Sources */,
-				F690FEFF2652289E00CD76B0 /* LoginViewController.swift in Sources */,
 				F690FF4126526A6E00CD76B0 /* BaseViewController.swift in Sources */,
 				F690FF34265259E100CD76B0 /* UIColor+Extension.swift in Sources */,
 				F690FF2E2652551B00CD76B0 /* Dimension.swift in Sources */,
 				F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */,
 				F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */,
-				F60F7FFE2652C599000D2610 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
