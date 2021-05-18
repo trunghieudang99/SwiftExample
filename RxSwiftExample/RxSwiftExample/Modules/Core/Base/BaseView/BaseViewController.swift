@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import RxSwift
 
 class BaseViewController: UIViewController {
 
+    let disposeBag = DisposeBag()
     let backgroundImageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleToFill

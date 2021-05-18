@@ -20,6 +20,8 @@
 		F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF3D265269D100CD76B0 /* TextManager.swift */; };
 		F690FF4126526A6E00CD76B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF4026526A6E00CD76B0 /* BaseViewController.swift */; };
 		F690FF5A26526D1300CD76B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF5926526D1300CD76B0 /* SignUpViewController.swift */; };
+		F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */; };
+		F6E05EF526536BB9000DC400 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF426536BB9000DC400 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F690FF3D265269D100CD76B0 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		F690FF4026526A6E00CD76B0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F690FF5926526D1300CD76B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCornerRoundButton.swift; sourceTree = "<group>"; };
+		F6E05EF426536BB9000DC400 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F690FF5926526D1300CD76B0 /* SignUpViewController.swift */,
+				F6E05EF426536BB9000DC400 /* HomeViewController.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				F690FF26265252B300CD76B0 /* BaseView.swift */,
 				F690FF2A2652536900CD76B0 /* BaseTextFieldView.swift */,
 				F690FF4026526A6E00CD76B0 /* BaseViewController.swift */,
+				F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F690FF5A26526D1300CD76B0 /* SignUpViewController.swift in Sources */,
+				F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */,
 				F690FF3826525C9300CD76B0 /* UIFont+Extension.swift in Sources */,
 				F690FF27265252B300CD76B0 /* BaseView.swift in Sources */,
 				F690FF3B2652617200CD76B0 /* UIView+Extension.swift in Sources */,
@@ -376,6 +383,7 @@
 				F690FF2E2652551B00CD76B0 /* Dimension.swift in Sources */,
 				F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */,
 				F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */,
+				F6E05EF526536BB9000DC400 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

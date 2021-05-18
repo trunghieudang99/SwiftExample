@@ -49,21 +49,29 @@ class SignUpViewController: BaseViewController {
         return view
     }()
     
-    lazy var loginButton: UIButton = {
-        let button = UIButton()
-        button.setTitle(TextManager.login, for: .normal)
-        button.layer.cornerRadius  = 5
-        button.layer.masksToBounds = true
-        button.backgroundColor = UIColor.primary1
+    lazy var loginButton: BaseCornerRoundButton = {
+        let button = BaseCornerRoundButton(title: TextManager.login)
+        button.rx.controlEvent(.touchUpInside).subscribe(onNext: { [weak self] () in
+            self?.login()
+        }).disposed(by: self.disposeBag)
         return button
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        layoutBackgroundImageView(imageName: "splash_screen")
         layoutCenterStackView()
         layoutUserIdTextFieldView()
         layoutPasswordTextFieldView()
+        layoutLoginButton()
+        layoutTopView()
+        layoutLogoImageView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
 }
@@ -91,5 +99,54 @@ extension SignUpViewController {
     private func layoutPasswordTextFieldView() {
         centerStackView.addArrangedSubview(passwordTextFieldView)
     }
+
+    private func layoutLoginButton() {
+        centerStackView.addArrangedSubview(loginButton)
+        loginButton.snp.makeConstraints { (make) in
+            make.height.equalTo(dimension.largeMargin_56)
+        }
+    }
+    
+    private func layoutTopView() {
+        view.addSubview(topView)
+        topView.snp.makeConstraints { (make) in
+            make.bottom.equalTo(centerStackView.snp.top)
+                .inset(dimension.largeMargin)
+            make.left.right.equalToSuperview()
+            if #available(iOS 11, *) {
+                make.top.equalTo(view.safeAreaLayoutGuide)
+                    .offset(dimension.largeMargin)
+            } else {
+                make.top.equalTo(topLayoutGuide.snp.bottom)
+                    .offset(dimension.largeMargin)
+            }
+        }
+    }
+    
+    private func layoutLogoImageView() {
+        topView.addSubview(logoImageView)
+        logoImageView.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.width.equalTo(self.view).multipliedBy(0.32)
+            make.height.equalTo(self.logoImageView.snp.width)
+        }
+    }
+}
+
+extension SignUpViewController {
+    
+    fileprivate func login() {
+        guard let code = self.userIdTextFieldView.text, !code.isEmpty else {
+            self.userIdTextFieldView.showDefaultError()
+            return
+        }
+        
+        guard let password = self.passwordTextFieldView.text, !password.isEmpty else {
+            self.passwordTextFieldView.showDefaultError()
+            return
+        }
+        
+    }
+    
 }
 
