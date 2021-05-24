@@ -8,5 +8,13 @@ target 'RxSwiftExample' do
     pod 'RxCocoa', '6.2.0' 
     pod 'IQKeyboardManagerSwift', '6.5.5'
     pod 'Alamofire', '~> 4.2'
-
+     
+    pod 'Firebase'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/RemoteConfig'
+    pod 'Firebase/Messaging'
+    pod 'Firebase/InAppMessaging'
+    pod 'Firebase/Performance'
+    pod 'Firebase/Crashlytics'
+    
 end

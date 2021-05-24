@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		333EB265C13B5A9C1844536C /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */; };
+		F614EE5F265665E500E0E1A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F614EE5E265665E500E0E1A8 /* GoogleService-Info.plist */; };
 		F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FEFA2652289E00CD76B0 /* AppDelegate.swift */; };
 		F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F690FF032652289F00CD76B0 /* Assets.xcassets */; };
 		F690FF072652289F00CD76B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F690FF052652289F00CD76B0 /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 		2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E551F6479B7363E1F723CC /* Pods-RxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		46D70066A2BCF37138BE77EB /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F614EE5E265665E500E0E1A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F690FEF72652289E00CD76B0 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F690FEFA2652289E00CD76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F690FF032652289F00CD76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		F668864D2653614600ACBFB5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F614EE5E265665E500E0E1A8 /* GoogleService-Info.plist */,
 				F668864E2653614D00ACBFB5 /* login */,
 			);
 			path = Features;
@@ -271,6 +274,7 @@
 				F690FEF42652289E00CD76B0 /* Frameworks */,
 				F690FEF52652289E00CD76B0 /* Resources */,
 				226EFADE8CB5463ED2C7E3C5 /* [CP] Embed Pods Frameworks */,
+				0B2B59E432BFB7F38104D131 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,12 +324,30 @@
 			files = (
 				F690FF072652289F00CD76B0 /* LaunchScreen.storyboard in Resources */,
 				F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */,
+				F614EE5F265665E500E0E1A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B2B59E432BFB7F38104D131 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		226EFADE8CB5463ED2C7E3C5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
