@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		333EB265C13B5A9C1844536C /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */; };
-		F614EE5F265665E500E0E1A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F614EE5E265665E500E0E1A8 /* GoogleService-Info.plist */; };
 		F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FEFA2652289E00CD76B0 /* AppDelegate.swift */; };
 		F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F690FF032652289F00CD76B0 /* Assets.xcassets */; };
 		F690FF072652289F00CD76B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F690FF052652289F00CD76B0 /* LaunchScreen.storyboard */; };
@@ -21,6 +20,8 @@
 		F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF3D265269D100CD76B0 /* TextManager.swift */; };
 		F690FF4126526A6E00CD76B0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF4026526A6E00CD76B0 /* BaseViewController.swift */; };
 		F690FF5A26526D1300CD76B0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FF5926526D1300CD76B0 /* SignUpViewController.swift */; };
+		F6CEBF63265B8AFD00641A3B /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CEBF62265B8AFD00641A3B /* BaseScrollView.swift */; };
+		F6CEBF68265B936600641A3B /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CEBF67265B936600641A3B /* HomeHeaderView.swift */; };
 		F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */; };
 		F6E05EF526536BB9000DC400 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF426536BB9000DC400 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +30,6 @@
 		2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E551F6479B7363E1F723CC /* Pods-RxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		46D70066A2BCF37138BE77EB /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
-		F614EE5E265665E500E0E1A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F690FEF72652289E00CD76B0 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F690FEFA2652289E00CD76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F690FF032652289F00CD76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		F690FF3D265269D100CD76B0 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		F690FF4026526A6E00CD76B0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F690FF5926526D1300CD76B0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F6CEBF62265B8AFD00641A3B /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
+		F6CEBF67265B936600641A3B /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCornerRoundButton.swift; sourceTree = "<group>"; };
 		F6E05EF426536BB9000DC400 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +92,6 @@
 		F668864D2653614600ACBFB5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				F614EE5E265665E500E0E1A8 /* GoogleService-Info.plist */,
 				F668864E2653614D00ACBFB5 /* login */,
 			);
 			path = Features;
@@ -227,6 +228,8 @@
 				F690FF2A2652536900CD76B0 /* BaseTextFieldView.swift */,
 				F690FF4026526A6E00CD76B0 /* BaseViewController.swift */,
 				F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */,
+				F6CEBF62265B8AFD00641A3B /* BaseScrollView.swift */,
+				F6CEBF67265B936600641A3B /* HomeHeaderView.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -324,7 +327,6 @@
 			files = (
 				F690FF072652289F00CD76B0 /* LaunchScreen.storyboard in Resources */,
 				F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */,
-				F614EE5F265665E500E0E1A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +407,8 @@
 				F690FF2E2652551B00CD76B0 /* Dimension.swift in Sources */,
 				F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */,
 				F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */,
+				F6CEBF63265B8AFD00641A3B /* BaseScrollView.swift in Sources */,
+				F6CEBF68265B936600641A3B /* HomeHeaderView.swift in Sources */,
 				F6E05EF526536BB9000DC400 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98LCVSKDA3;
 				INFOPLIST_FILE = RxSwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,6 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98LCVSKDA3;
 				INFOPLIST_FILE = RxSwiftExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
