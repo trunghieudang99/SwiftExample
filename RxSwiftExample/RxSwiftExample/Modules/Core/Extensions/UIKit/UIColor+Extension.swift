@@ -20,7 +20,7 @@ extension UIColor {
     }
     
     class var background2: UIColor {
-        return UIColor(hex: "#ffffff")
+        return UIColor(hex: "#F3F3F3")
     }
     
     class var primary1: UIColor {
@@ -29,10 +29,6 @@ extension UIColor {
     
     class var background1: UIColor {
         return UIColor(hex: "#f5f7f9")
-    }
-    
-    class var remark2: UIColor {
-        return UIColor(hex: "#fdcf4b")
     }
     
     class var secondary4: UIColor {
@@ -52,8 +48,13 @@ extension UIColor {
     }
     
     class var remark1: UIColor {
-        return UIColor(hex: "#6092df")
+        return UIColor(hex: "#001F5F")
     }
+    
+    class var remark2: UIColor {
+        return UIColor(hex: "#FF3399")
+    }
+    
 }
 
 // MARK: - Support Method
