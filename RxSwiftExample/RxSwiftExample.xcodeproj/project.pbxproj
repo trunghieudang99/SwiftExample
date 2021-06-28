@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		333EB265C13B5A9C1844536C /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */; };
+		F6257B712685D6F100E27B0D /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6257B702685D6F100E27B0D /* PasswordViewController.swift */; };
 		F676810726783FCD0075D88A /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F676810626783FCD0075D88A /* ExampleViewController.swift */; };
 		F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FEFA2652289E00CD76B0 /* AppDelegate.swift */; };
 		F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F690FF032652289F00CD76B0 /* Assets.xcassets */; };
@@ -26,11 +27,7 @@
 		F6DEBA5D2666307800B84857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DEBA5C2666307800B84857 /* ViewController.swift */; };
 		F6E043DF2683227D00436FE4 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043DE2683227D00436FE4 /* UITableView+Extension.swift */; };
 		F6E043E22683228800436FE4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043E12683228800436FE4 /* BaseTableViewCell.swift */; };
-		F6E043E5268322B300436FE4 /* FlashSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043E4268322B300436FE4 /* FlashSaleTableViewCell.swift */; };
 		F6E043E8268322EA00436FE4 /* JSONParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043E7268322EA00436FE4 /* JSONParsable.swift */; };
-		F6E043EB2683241C00436FE4 /* TitleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043EA2683241B00436FE4 /* TitleLabelView.swift */; };
-		F6E043EE2683254D00436FE4 /* ParameterSaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043ED2683254D00436FE4 /* ParameterSaleView.swift */; };
-		F6E0441F2683770C00436FE4 /* FlashSaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E0441E2683770C00436FE4 /* FlashSaleModel.swift */; };
 		F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */; };
 		F6E05EF526536BB9000DC400 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF426536BB9000DC400 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +36,7 @@
 		2AE5A05E5AFD69D191940ED9 /* Pods_RxSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E551F6479B7363E1F723CC /* Pods-RxSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
 		46D70066A2BCF37138BE77EB /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F6257B702685D6F100E27B0D /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		F676810626783FCD0075D88A /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		F690FEF72652289E00CD76B0 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F690FEFA2652289E00CD76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,11 +57,7 @@
 		F6DEBA5C2666307800B84857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6E043DE2683227D00436FE4 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		F6E043E12683228800436FE4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		F6E043E4268322B300436FE4 /* FlashSaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleTableViewCell.swift; sourceTree = "<group>"; };
 		F6E043E7268322EA00436FE4 /* JSONParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsable.swift; sourceTree = "<group>"; };
-		F6E043EA2683241B00436FE4 /* TitleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelView.swift; sourceTree = "<group>"; };
-		F6E043ED2683254D00436FE4 /* ParameterSaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSaleView.swift; sourceTree = "<group>"; };
-		F6E0441E2683770C00436FE4 /* FlashSaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleModel.swift; sourceTree = "<group>"; };
 		F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCornerRoundButton.swift; sourceTree = "<group>"; };
 		F6E05EF426536BB9000DC400 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,10 +107,7 @@
 				F668864E2653614D00ACBFB5 /* login */,
 				F6DEBA5C2666307800B84857 /* ViewController.swift */,
 				F676810626783FCD0075D88A /* ExampleViewController.swift */,
-				F6E043E4268322B300436FE4 /* FlashSaleTableViewCell.swift */,
-				F6E043EA2683241B00436FE4 /* TitleLabelView.swift */,
-				F6E043ED2683254D00436FE4 /* ParameterSaleView.swift */,
-				F6E0441E2683770C00436FE4 /* FlashSaleModel.swift */,
+				F6257B702685D6F100E27B0D /* PasswordViewController.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -424,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6DEBA5D2666307800B84857 /* ViewController.swift in Sources */,
+				F6257B712685D6F100E27B0D /* PasswordViewController.swift in Sources */,
 				F676810726783FCD0075D88A /* ExampleViewController.swift in Sources */,
 				F690FF5A26526D1300CD76B0 /* SignUpViewController.swift in Sources */,
 				F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */,
@@ -432,16 +424,12 @@
 				F690FF27265252B300CD76B0 /* BaseView.swift in Sources */,
 				F6E043DF2683227D00436FE4 /* UITableView+Extension.swift in Sources */,
 				F690FF3B2652617200CD76B0 /* UIView+Extension.swift in Sources */,
-				F6E043EB2683241C00436FE4 /* TitleLabelView.swift in Sources */,
 				F6E043E8268322EA00436FE4 /* JSONParsable.swift in Sources */,
 				F690FF2B2652536900CD76B0 /* BaseTextFieldView.swift in Sources */,
 				F690FF4126526A6E00CD76B0 /* BaseViewController.swift in Sources */,
 				F690FF34265259E100CD76B0 /* UIColor+Extension.swift in Sources */,
-				F6E043E5268322B300436FE4 /* FlashSaleTableViewCell.swift in Sources */,
-				F6E0441F2683770C00436FE4 /* FlashSaleModel.swift in Sources */,
 				F690FF2E2652551B00CD76B0 /* Dimension.swift in Sources */,
 				F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */,
-				F6E043EE2683254D00436FE4 /* ParameterSaleView.swift in Sources */,
 				F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */,
 				F6CEBF63265B8AFD00641A3B /* BaseScrollView.swift in Sources */,
 				F6CEBF68265B936600641A3B /* HomeHeaderView.swift in Sources */,

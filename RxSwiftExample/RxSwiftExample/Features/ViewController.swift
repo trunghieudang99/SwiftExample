@@ -7,63 +7,82 @@
 
 import UIKit
 
+protocol ViewControllerDelegate: class {
+    func backToCurrentVC()
+}
+
 class ViewController: BaseViewController {
 
-    fileprivate lazy var testButton: UIButton = {
+    weak var delegate: ViewControllerDelegate?
+    
+    lazy var testButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Button", for: .normal)
-        button.backgroundColor = UIColor.black
-        button.titleLabel?.tintColor = UIColor.white
-        button.addTarget(self, action: #selector(didTapNext), for: .touchUpInside)
+        button.setTitle("Test", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.addTarget(self, action: #selector(tapOnTest),
+                         for: .touchUpInside)
         return button
     }()
     
-    fileprivate lazy var testLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Trung Hieu"
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        return label
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "View"
         view.backgroundColor = UIColor.white
         layoutTestButton()
-        layoutTestLabel()
+       
     }
     
-    @objc private func didTapNext() {
-        let vc = ExampleViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     
     private func layoutTestButton() {
         view.addSubview(testButton)
         testButton.snp.makeConstraints { (make) in
-//            $0.centerX
-//                .centerY
-//                .equalToSuperview()
-//            $0.width.height.equalTo(100)
             make.centerX
                 .centerY
                 .equalToSuperview()
-            make.width.height.equalTo(100)
+            make.width
+                .height
+                .equalTo(50)
         }
     }
     
-    private func layoutTestLabel() {
-        view.addSubview(testLabel)
-        testLabel.snp.makeConstraints { (make) in
-            make.centerX
-                .equalToSuperview()
-            make.width.height.equalTo(100)
-            make.top.equalTo(testButton.snp.bottom)
-                .offset(20)
-        }
+    @objc func tapOnTest() {
+        let vc  = PasswordViewController()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+
 }
 
+extension ViewController: PasswordViewControllerDelegate {
+    func backToRootView() {
+        self.dismiss(animated: true) {
+            self.delegate?.backToCurrentVC()
+        }
+    }
+}
+
+
+extension UINavigationController {
+    
+    func popViewControllerWithHandler(completion: @escaping ()->()) {
+          CATransaction.begin()
+          CATransaction.setCompletionBlock(completion)
+          self.popViewController(animated: true)
+          CATransaction.commit()
+      }
+    
+    func pushViewController(viewController: UIViewController, completion: @escaping ()->()) {
+          CATransaction.begin()
+          CATransaction.setCompletionBlock(completion)
+          self.pushViewController(viewController, animated: true)
+          CATransaction.commit()
+      }
+}
