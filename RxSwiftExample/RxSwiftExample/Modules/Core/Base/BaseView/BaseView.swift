@@ -10,20 +10,22 @@ import RxSwift
 
 class BaseView: UIView {
 
+    // MARK: - Variables
     let disposeBag = DisposeBag()
     
     // MARK: - Init
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.initialize()
+        self.setupComponents()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.initialize()
+        self.setupComponents()
     }
     
-    func initialize() {}
+    // MARK: - Support Methods
+    func setupComponents() {
+    }
 
 }

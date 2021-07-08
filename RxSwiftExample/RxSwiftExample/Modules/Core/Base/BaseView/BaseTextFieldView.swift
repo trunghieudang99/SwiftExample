@@ -182,8 +182,7 @@ class BaseTextFieldView: BaseView {
     
     // MARK: - View LifeCycles
     
-    override func initialize() {
-        super.initialize()
+    override func setupComponents() {
         layoutContenStackView()
         layoutTopView()
         layoutErrorTitleLabel()

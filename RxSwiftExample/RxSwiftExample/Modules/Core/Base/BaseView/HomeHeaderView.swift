@@ -9,30 +9,19 @@ import UIKit
 
 class HomeHeaderView: BaseView {
 
-    let logoImageView: UIImageView = {
-        let image = UIImage(named: "icon-logo-type-2")
-        let imageView = UIImageView(image: image)
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-
+    // MARK: - Define Components
     
-    override func initialize() {
-        super.initialize()
+    let welcomeLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        return label
+    }()
+    
+    override func setupComponents() {
+        
     }
     
     private func setupLogoImageView() {
-        self.addSubview(self.logoImageView)
-        self.logoImageView.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.top.bottom.equalToSuperview().inset(dimension.largeMargin)
-            make.height.equalTo(dimension.largeMargin_48)
-            if let image = self.logoImageView.image {
-                make.width.equalTo(self.logoImageView.snp.height).multipliedBy(image.size.width / image.size.height)
-            } else {
-                make.width.equalTo(self.logoImageView.snp.height)
-            }
-        }
+       
     }
     
 }
