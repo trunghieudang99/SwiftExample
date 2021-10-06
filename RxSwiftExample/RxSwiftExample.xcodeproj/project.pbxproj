@@ -28,6 +28,8 @@
 		F6E043E8268322EA00436FE4 /* JSONParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E043E7268322EA00436FE4 /* JSONParsable.swift */; };
 		F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */; };
 		F6EA65782696AB65002F030A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA65772696AB65002F030A /* ViewController.swift */; };
+		F6FC722B2709A96D004C7A49 /* ViewModelTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC722A2709A96D004C7A49 /* ViewModelTypeProtocol.swift */; };
+		F6FC722D2709AA65004C7A49 /* SayHelloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC722C2709AA65004C7A49 /* SayHelloViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		EA4760BE86D55727D26050E6 /* Pods-RxSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExample.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftExample/Pods-RxSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F603D007268AFF880013B281 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F603D0FE268B0BB40013B281 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F61AE776270425CA0052B291 /* RxSwiftExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F690FEF72652289E00CD76B0 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F690FEFA2652289E00CD76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F690FF032652289F00CD76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +59,8 @@
 		F6E043E7268322EA00436FE4 /* JSONParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsable.swift; sourceTree = "<group>"; };
 		F6E05EF1265364E3000DC400 /* BaseCornerRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCornerRoundButton.swift; sourceTree = "<group>"; };
 		F6EA65772696AB65002F030A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6FC722A2709A96D004C7A49 /* ViewModelTypeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTypeProtocol.swift; sourceTree = "<group>"; };
+		F6FC722C2709AA65004C7A49 /* SayHelloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayHelloViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 		F668864D2653614600ACBFB5 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F6FC72292709A937004C7A49 /* Protocol */,
+				F6FC72282709A925004C7A49 /* Home */,
+				F61AE776270425CA0052B291 /* RxSwiftExample.playground */,
 				F603D000268AFF420013B281 /* Application */,
 			);
 			path = Features;
@@ -277,6 +285,22 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		F6FC72282709A925004C7A49 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F6FC72292709A937004C7A49 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC722A2709A96D004C7A49 /* ViewModelTypeProtocol.swift */,
+				F6FC722C2709AA65004C7A49 /* SayHelloViewModel.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,6 +417,7 @@
 				F603D0FF268B0BB50013B281 /* UIViewController+Extension.swift in Sources */,
 				F6EA65782696AB65002F030A /* ViewController.swift in Sources */,
 				F6E05EF2265364E3000DC400 /* BaseCornerRoundButton.swift in Sources */,
+				F6FC722D2709AA65004C7A49 /* SayHelloViewModel.swift in Sources */,
 				F6E043E22683228800436FE4 /* BaseTableViewCell.swift in Sources */,
 				F690FF3826525C9300CD76B0 /* UIFont+Extension.swift in Sources */,
 				F690FF27265252B300CD76B0 /* BaseView.swift in Sources */,
@@ -406,6 +431,7 @@
 				F603D008268AFF880013B281 /* HomeViewController.swift in Sources */,
 				F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */,
 				F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */,
+				F6FC722B2709A96D004C7A49 /* ViewModelTypeProtocol.swift in Sources */,
 				F6CEBF63265B8AFD00641A3B /* BaseScrollView.swift in Sources */,
 				F6CEBF68265B936600641A3B /* HomeHeaderView.swift in Sources */,
 			);
