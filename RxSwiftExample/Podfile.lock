@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.9.1)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - iCarousel (1.8.3)
   - IQKeyboardManagerSwift (6.5.5)
   - Kingfisher (4.10.1)
@@ -21,6 +24,7 @@ PODS:
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - Charts
   - iCarousel
   - IQKeyboardManagerSwift
   - Kingfisher
@@ -37,6 +41,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - iCarousel
     - IQKeyboardManagerSwift
     - Kingfisher
@@ -53,6 +58,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
@@ -67,6 +73,6 @@ SPEC CHECKSUMS:
   SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 14b3609534c0e5f0c632d329b979edc3c2bbc594
+PODFILE CHECKSUM: 3390ad130628852b2e79c8ab2aa79dc8a8d01e6d
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
