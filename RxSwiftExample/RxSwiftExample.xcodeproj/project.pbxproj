@@ -163,9 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				F690FF212652527000CD76B0 /* Extensions */,
-				F690FF202652526800CD76B0 /* APIServices */,
-				F690FF1F2652526000CD76B0 /* Helper */,
-				F690FF1E2652525800CD76B0 /* Constants */,
 				F690FF1D2652525000CD76B0 /* Managers */,
 				F690FF1C2652524600CD76B0 /* Commons */,
 				F690FF1B2652523D00CD76B0 /* Base */,
@@ -176,10 +173,7 @@
 		F690FF1B2652523D00CD76B0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				F690FF25265252A200CD76B0 /* BaseViewModels */,
-				F690FF242652529900CD76B0 /* CommonViews */,
 				F690FF232652529100CD76B0 /* BaseView */,
-				F690FF222652528A00CD76B0 /* BaseViewController */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -200,41 +194,12 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		F690FF1E2652525800CD76B0 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		F690FF1F2652526000CD76B0 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		F690FF202652526800CD76B0 /* APIServices */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIServices;
-			sourceTree = "<group>";
-		};
 		F690FF212652527000CD76B0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F690FF32265259C900CD76B0 /* Foundation */,
 				F690FF31265259C400CD76B0 /* UIKit */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		F690FF222652528A00CD76B0 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		F690FF232652529100CD76B0 /* BaseView */ = {
@@ -250,20 +215,6 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
-		F690FF242652529900CD76B0 /* CommonViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommonViews;
-			sourceTree = "<group>";
-		};
-		F690FF25265252A200CD76B0 /* BaseViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseViewModels;
-			sourceTree = "<group>";
-		};
 		F690FF31265259C400CD76B0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,13 +227,6 @@
 				F603D0FE268B0BB40013B281 /* UIViewController+Extension.swift */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		F690FF32265259C900CD76B0 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Foundation;
 			sourceTree = "<group>";
 		};
 		F6FC72282709A925004C7A49 /* Home */ = {
