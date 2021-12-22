@@ -19,6 +19,7 @@ PODS:
   - SwiftLint (0.29.1)
   - SwiftyGif (5.4.0)
   - SwiftyJSON (4.2.0)
+  - Sync (6.0.3)
 
 DEPENDENCIES:
   - iCarousel
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - SwiftLint (= 0.29.1)
   - SwiftyGif
   - SwiftyJSON (= 4.2.0)
+  - Sync (~> 6)
 
 SPEC REPOS:
   trunk:
@@ -50,6 +52,7 @@ SPEC REPOS:
     - SwiftLint
     - SwiftyGif
     - SwiftyJSON
+    - Sync
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -66,7 +69,8 @@ SPEC CHECKSUMS:
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
   SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Sync: 40735880f9c7dfb222fa48078bea320a90276d62
 
-PODFILE CHECKSUM: 14b3609534c0e5f0c632d329b979edc3c2bbc594
+PODFILE CHECKSUM: 00050e5f74c092e3b8a297712df2f528fa8e2e7a
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

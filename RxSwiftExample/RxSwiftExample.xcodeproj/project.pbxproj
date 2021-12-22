@@ -10,6 +10,7 @@
 		DB1F4BF871B34BEEFD2694BC /* Pods_RxSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D629C7F85E0A6CDF0A2DAA4 /* Pods_RxSwiftExample.framework */; };
 		F603D008268AFF880013B281 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F603D007268AFF880013B281 /* HomeViewController.swift */; };
 		F603D0FF268B0BB50013B281 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F603D0FE268B0BB40013B281 /* UIViewController+Extension.swift */; };
+		F62EBDEF275DF47A00314391 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62EBDEE275DF47A00314391 /* Contants.swift */; };
 		F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F690FEFA2652289E00CD76B0 /* AppDelegate.swift */; };
 		F690FF042652289F00CD76B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F690FF032652289F00CD76B0 /* Assets.xcassets */; };
 		F690FF072652289F00CD76B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F690FF052652289F00CD76B0 /* LaunchScreen.storyboard */; };
@@ -39,6 +40,7 @@
 		F603D007268AFF880013B281 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F603D0FE268B0BB40013B281 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F61AE776270425CA0052B291 /* RxSwiftExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F62EBDEE275DF47A00314391 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		F690FEF72652289E00CD76B0 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F690FEFA2652289E00CD76B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F690FF032652289F00CD76B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				F603D007268AFF880013B281 /* HomeViewController.swift */,
 				F6EA65772696AB65002F030A /* ViewController.swift */,
+				F62EBDEE275DF47A00314391 /* Contants.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				F603D008268AFF880013B281 /* HomeViewController.swift in Sources */,
 				F690FEFB2652289E00CD76B0 /* AppDelegate.swift in Sources */,
 				F690FF3E265269D100CD76B0 /* TextManager.swift in Sources */,
+				F62EBDEF275DF47A00314391 /* Contants.swift in Sources */,
 				F6FC722B2709A96D004C7A49 /* ViewModelTypeProtocol.swift in Sources */,
 				F6CEBF63265B8AFD00641A3B /* BaseScrollView.swift in Sources */,
 				F6CEBF68265B936600641A3B /* HomeHeaderView.swift in Sources */,
