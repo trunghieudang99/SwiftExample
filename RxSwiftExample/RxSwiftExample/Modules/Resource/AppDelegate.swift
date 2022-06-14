@@ -7,10 +7,6 @@
 
 import UIKit
 import SnapKit
-import RxSwift
-import RxCocoa
-
-import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
