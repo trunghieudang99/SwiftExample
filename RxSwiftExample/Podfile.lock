@@ -1,78 +1,16 @@
 PODS:
-  - Alamofire (4.9.1)
-  - Charts (3.6.0):
-    - Charts/Core (= 3.6.0)
-  - Charts/Core (3.6.0)
-  - iCarousel (1.8.3)
-  - IQKeyboardManagerSwift (6.5.5)
-  - Kingfisher (4.10.1)
-  - Localize-Swift (2.0.0)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
-    - Moya/Core
-    - RxSwift (~> 4.0)
-  - Result (4.1.0)
-  - RxCocoa (4.5.0):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxSwift (4.5.0)
-  - Shimmer (1.0.2)
   - SnapKit (4.2.0)
-  - SwiftLint (0.29.1)
-  - SwiftyGif (5.4.0)
-  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
-  - Charts
-  - iCarousel
-  - IQKeyboardManagerSwift
-  - Kingfisher
-  - Localize-Swift (= 2.0.0)
-  - Moya/RxSwift (~> 13.0)
-  - RxCocoa (~> 4.0)
-  - RxSwift (~> 4.0)
-  - Shimmer (~> 1.0.2)
   - SnapKit (= 4.2.0)
-  - SwiftLint (= 0.29.1)
-  - SwiftyGif
-  - SwiftyJSON (= 4.2.0)
 
 SPEC REPOS:
   trunk:
-    - Alamofire
-    - Charts
-    - iCarousel
-    - IQKeyboardManagerSwift
-    - Kingfisher
-    - Localize-Swift
-    - Moya
-    - Result
-    - RxCocoa
-    - RxSwift
-    - Shimmer
     - SnapKit
-    - SwiftLint
-    - SwiftyGif
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
-  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
-  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
-  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
-  SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 3390ad130628852b2e79c8ab2aa79dc8a8d01e6d
+PODFILE CHECKSUM: 3a22acb277b6612a15308d7f20654f9f86100850
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
